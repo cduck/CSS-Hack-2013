@@ -1,74 +1,111 @@
-<!DOCTYPE html>
 <html>
+<head>
+	<title>Hackathon 2013</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Css-hack-2013 : Using only CSS3 to create cool 3D effects." />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<div class="main">
 
-    <title>Css-hack-2013</title>
-  </head>
+<!-- The Tab Bar -->
+<div class="tabbar">
+	<a href="#"><label for="taba"><div class="tab">Side A</div></label></a>
+	<a href="#"><label for="tabb"><div class="tab">Side B</div></label></a>
+	<a href="#"><label for="tabc"><div class="tab">Side C</div></label></a>
+	<a href="#"><label for="tabd"><div class="tab">Side D</div></label></a>
+	<a href="#"><label for="tabe"><div class="tab">Side E</div></label></a>
+	<a href="#"><label for="tabf"><div class="tab">Side F</div></label></a>
+</div>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cduck/CSS-Hack-2013">View on GitHub</a>
+<!--Hidden radio buttons must have the same parent as the box div.-->
+<input type="radio" name="tabs" value="a" id="taba" checked="checked">
+<input type="radio" name="tabs" value="b" id="tabb">
+<input type="radio" name="tabs" value="c" id="tabc">
+<input type="radio" name="tabs" value="d" id="tabd">
+<input type="radio" name="tabs" value="e" id="tabe">
+<input type="radio" name="tabs" value="f" id="tabf">
 
-          <h1 id="project_title">Css-hack-2013</h1>
-          <h2 id="project_tagline">Using only CSS3 to create cool 3D effects.</h2>
+<!-- The Cube -->
+<div class="box boxwrapper">
+	<div class="box boxscaler">
+	<div class="box boxcontainer">
+		<div class="box boxa boxside">
+			<div class="content">
+				<h2>Side A</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nisi vel eros aliquet tincidunt et aliquet lorem. Etiam ultrices tellus ut nunc convallis pharetra. Nunc ut enim in tellus dictum mattis et egestas leo. Aenean a elit eu mauris imperdiet gravida. Fusce sapien tortor, pretium eget mattis non, tincidunt et lectus. Mauris elementum orci sit amet libero porttitor bibendum. Vestibulum nisi augue, adipiscing in varius eu, pellentesque rhoncus elit. Nullam aliquet volutpat sodales. Nullam vel iaculis nunc. Cras commodo leo nec nisi fermentum molestie. Donec diam erat, sagittis aliquam molestie a, dignissim sit amet felis. Quisque feugiat sapien at diam laoreet porttitor.
+				</p><p>
+					Fusce aliquet, arcu ac placerat ornare, est massa lobortis velit, luctus dictum ante enim ut quam. Vivamus ipsum lectus, ultrices id convallis nec, vulputate in tellus. Curabitur vel orci libero, vitae ornare est. Vestibulum rutrum mauris vitae augue tempus euismod. Sed blandit, eros a gravida ornare, enim quam dictum ante, non egestas metus erat vitae tellus. In vehicula lectus nec nulla porta luctus. Sed et urna blandit eros scelerisque vehicula id sit amet turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis nulla eu ligula faucibus molestie. Donec in diam a sem vestibulum blandit.
+				</p>
+			</div>
+		</div>
+		<div class="box boxb boxside">
+			<div class="content">
+				<h2>Side B</h2>
+				<p>
+					Nam vestibulum posuere velit in consectetur. Quisque cursus elit nec enim aliquam facilisis. Etiam eu ligula ut dolor interdum fermentum a a neque. Pellentesque et justo ipsum. Vestibulum quis elit sed nisl congue fringilla. Maecenas porta leo ut urna dapibus nec fringilla velit sollicitudin. Fusce libero velit, venenatis at auctor aliquet, congue ac quam. Nullam adipiscing, libero quis tempus sollicitudin, lectus lacus elementum nisl, sed pretium diam metus at massa.
+				</p><p>
+					Cras luctus, dui a dapibus interdum, felis lorem ullamcorper mauris, in interdum odio tortor nec ipsum. Pellentesque orci velit, pellentesque eget scelerisque rhoncus, viverra non justo. Quisque sapien nisi, tincidunt non pretium nec, malesuada ut magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Aenean eget interdum nisl. Sed adipiscing velit eget nisi ultricies quis feugiat neque volutpat.
+				</p>
+			</div>
+		</div>
+		<div class="box boxc boxside">
+			<div class="content">
+				<h2>Side C</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at porta mi. Aenean libero erat, elementum eu viverra vel, fringilla ut felis. Sed sed nibh urna, sed adipiscing ante. Nulla malesuada euismod lectus et condimentum. Vestibulum tempus luctus gravida. Etiam eu blandit orci. Aenean et quam ac est sodales pretium eget sed felis. Etiam tortor tortor, placerat eget auctor dapibus, feugiat et neque. Maecenas aliquam erat felis. Etiam egestas tempus nunc vel vestibulum. Pellentesque sollicitudin tristique rhoncus. Curabitur et tortor eu sem interdum cursus at non metus. Morbi gravida venenatis sagittis.
+				</p><p>
+					Morbi in accumsan felis. Ut aliquet, ligula a euismod porta, purus urna vulputate quam, id malesuada massa felis eu lectus. Donec cursus enim sed ipsum accumsan commodo feugiat lectus gravida. Proin ac sodales dolor. Pellentesque egestas odio at diam sollicitudin placerat. Praesent eleifend tincidunt ipsum, a vehicula risus ullamcorper et. Donec massa turpis, consectetur in placerat non, fringilla eget dolor. Integer convallis pellentesque sapien, sed condimentum lectus rhoncus ut.
+				</p>
+			</div>
+		</div>
+		<div class="box boxd boxside">
+			<div class="content">
+				<h2>Side D</h2>
+				<p>
+					Vestibulum eu odio dolor, luctus suscipit lacus. Nunc ligula magna, auctor interdum gravida a, ullamcorper at turpis. Nullam vel auctor purus. Vestibulum dictum porttitor sem ac aliquam. Maecenas ut lectus tortor. Donec et dolor vel ipsum aliquet luctus vitae non nisi. Cras pharetra scelerisque lacus, volutpat bibendum lorem egestas ut. Fusce eget felis magna, quis aliquam odio. Etiam non ligula tellus. Etiam ac neque vitae sem sollicitudin luctus ultricies id augue. Sed vestibulum porta cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sit amet lectus metus. Nunc rhoncus, massa a congue placerat, augue nulla tempus massa, in lacinia lorem sapien iaculis nisi. In vel massa in orci laoreet posuere ut vitae lorem.
+				</p><p>
+					Vestibulum venenatis orci vitae enim tempor molestie. Morbi mattis accumsan velit, eu feugiat sem rhoncus sed. Duis volutpat tellus et justo fringilla pharetra. Aliquam in magna erat. Sed nec nisl magna, eu tristique est. Proin at augue id arcu tristique blandit. Donec nec quam libero, non facilisis neque. Aliquam nec tellus eleifend sem vehicula ornare nec sit amet turpis. Suspendisse sed arcu tortor. Mauris quam lorem, dapibus a sagittis nec, aliquam ut lacus. Nulla condimentum arcu vitae arcu dapibus sit amet mollis libero varius.
+				</p><p>
+					Praesent augue eros, porttitor ac hendrerit eget, auctor nec sem. Pellentesque at tortor aliquet tortor ultricies malesuada. Curabitur gravida nunc nec tortor vehicula feugiat. Nunc rhoncus ipsum non massa faucibus a mollis lacus fringilla. Nulla facilisi. Vivamus aliquam scelerisque nibh sit amet posuere. Aenean ut urna non lorem fringilla consectetur. Nam vulputate hendrerit metus, et tempus felis interdum vel. Duis pharetra, lectus ac fermentum eleifend, arcu lorem condimentum felis, a gravida lorem nunc vitae nulla. Donec vitae commodo velit.
+				</p><p>
+					Fusce congue consequat tellus, aliquet tincidunt lorem porttitor et. Vivamus cursus bibendum urna, pretium egestas libero congue eu. Nam viverra lacus sed mauris tristique fermentum. Maecenas bibendum orci eu nibh faucibus ultrices. Nam mollis mauris vel urna interdum quis cursus est laoreet. Maecenas faucibus luctus sapien, in accumsan est vestibulum eget. Etiam sed fermentum est. Integer at ullamcorper mauris. Aliquam erat volutpat. Etiam sit amet dolor nisi. Sed rhoncus commodo augue ut ultricies. Nunc vestibulum fringilla porta. Suspendisse mollis pharetra mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec id sem sit amet arcu feugiat laoreet. Vivamus ultricies adipiscing mi sodales vulputate.
+				</p>
+			</div>
+		</div>
+		<div class="box boxe boxside">
+			<div class="content">
+				<h2>Side E</h2>
+				<p>
+					Aenean ac diam eu neque tincidunt tincidunt at nec dolor. Vivamus tincidunt nisi quis metus commodo eget gravida velit mattis. Praesent et placerat mi. Praesent consectetur, justo id sodales facilisis, ipsum massa consequat metus, eget euismod augue nulla nec orci. Sed non libero turpis. Integer laoreet feugiat diam, at ultrices lacus luctus at. Cras et ipsum metus, nec tempus neque. Proin sit amet lectus nec sem posuere dapibus semper semper ipsum. In luctus urna nec risus fringilla tincidunt. Donec at consequat velit.
+				</p><p>
+					Donec rutrum venenatis fringilla. Vivamus convallis elementum dolor, vitae malesuada mi posuere vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Sed congue turpis quis risus lobortis dictum. Ut sodales nibh sed arcu imperdiet vitae luctus libero tristique. Pellentesque cursus molestie orci, ut porta nulla auctor a. Nulla magna elit, lobortis eu pharetra id, volutpat ut nisl. Duis ultrices malesuada tempor. Vivamus semper fermentum faucibus. Vivamus iaculis nulla sed diam elementum lobortis. Suspendisse potenti. Suspendisse potenti.
+				</p><p>
+					Integer arcu enim, cursus at fermentum at, egestas sit amet risus. Praesent eu semper est. Nam ultrices, dui vitae congue interdum, erat risus iaculis est, et lacinia nunc neque non metus. Nam odio tellus, consequat non consequat non, hendrerit et nibh. Duis felis est, pharetra ut convallis eget, semper eu turpis. Fusce blandit, nisi sit amet euismod malesuada, nibh urna tempus ligula, nec vulputate ante odio vitae libero. Duis convallis, erat at rhoncus semper, urna metus rutrum tellus, sed adipiscing magna metus at ligula. Nulla consequat pharetra scelerisque. Sed quis sem erat.
+				</p>
+			</div>
+		</div>
+		<div class="box boxf boxside">
+			<div class="content">
+				<h2>Side F</h2>
+				<p>
+					Proin diam ante, fermentum id malesuada non, ultrices non risus. Etiam ultrices commodo enim, a rutrum libero malesuada id. Sed non leo risus. Quisque et risus eros, non cursus augue. Praesent vestibulum fermentum elit, sed consequat elit fringilla quis. Ut pharetra hendrerit massa, sit amet tristique nisi vehicula eu. Suspendisse sit amet nisi tortor, a sagittis massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vulputate mi et ante molestie convallis. Donec cursus, velit vitae venenatis consequat, felis mi blandit magna, vel pellentesque sapien est sed leo.
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cduck/CSS-Hack-2013/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cduck/CSS-Hack-2013/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+<span id="sig">Casey Duckering <img src="../signature.png"></span>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+</div>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Css-hack-2013 maintained by <a href="https://github.com/cduck">cduck</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
