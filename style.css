@@ -13,7 +13,8 @@ body {
 }
 
 .main {
-	padding: 0.5em;
+	margin: 0;
+	padding: 0;
 	padding-top: 0em;
 	width: 100%;
 }
@@ -85,10 +86,16 @@ p {
 	width: 100%;
 	
 	-webkit-perspective-origin: 50% 50%;
+	-moz-perspective-origin: 50% 50%;
+	-o-perspective-origin: 50% 50%;
 	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
 }
 .boxscaler {
 	-webkit-transform: translate3d(0,0,-335px);
+	-moz-transform: translate3d(0,0,-335px);
+	-o-transform: translate3d(0,0,-335px);
 }
 
 .boxcontainer {
@@ -113,59 +120,90 @@ p {
 
 .box {
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
 }
 
 .boxa {
 	-webkit-transform: translate3d(0,0,335px);
+	-moz-transform: translate3d(0,0,335px);
+	-o-transform: translate3d(0,0,335px);
 	background:rgba(127,255,255,0.75);
 }
 .boxb {
-	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
-	background:rgba(255,127,255,0.75);
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	-moz-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	-o-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	background:rgba(127,127,255,0.75);
 }
 .boxc {
 	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	-moz-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	-o-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
 	background:rgba(255,255,127,0.75);
 }
 .boxd {
 	-webkit-transform: rotate3d(1,1,0,180deg) translate3d(0,0,335px);
+	-moz-transform: rotate3d(1,1,0,180deg) translate3d(0,0,335px);
+	-o-transform: rotate3d(1,1,0,180deg) translate3d(0,0,335px);
 	background:rgba(127,255,127,0.75);
 }
 .boxe {
 	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	-moz-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	-o-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
 	background:rgba(255,127,127,0.75);
 }
 .boxf {
-	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
-	background:rgba(127,127,255,0.75);
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	-moz-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	-o-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	background:rgba(255,127,255,0.75);
 }
 
 
 
 /* Rotate the box when a tab is selected. */
 .boxcontainer {
-	-webkit-transform: rotate3d(0,1,0,0deg);
+	-webkit-transform: rotate3d(0,1,0,500deg);
+	-moz-transform: rotate3d(0,1,0,500deg);
+	-o-transform: rotate3d(0,1,0,500deg);
 	
 	-webkit-transition: -webkit-transform 0.7s ease;
+	-moz-transition: -moz-transform 0.7s ease;
+	-o-transition: -o-transform 0.7s ease;
 }
 #taba:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(0,1,0,0deg);
+	-moz-transform: rotate3d(0,1,0,0deg);
+	-o-transform: rotate3d(0,1,0,0deg);
 }
 #tabb:checked ~ * .boxcontainer {
-	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
+	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
+	-moz-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
+	-o-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
 }
 #tabc:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg);
+	-moz-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg);
+	-o-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg);
 }
 #tabd:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(1,1,0,-180deg);
+	-moz-transform: rotate3d(1,1,0,-180deg);
+	-o-transform: rotate3d(1,1,0,-180deg);
 }
 #tabe:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg);
+	-moz-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg);
+	-o-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg);
 }
 #tabf:checked ~ * .boxcontainer {
-	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
+	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
 }
+
 
 
 
