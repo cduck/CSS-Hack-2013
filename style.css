@@ -87,8 +87,8 @@ p {
 	
 	-webkit-perspective-origin: 50% 50%;
 	-moz-perspective-origin: 50% 50%;
-	-webkit-perspective-origin: 50% 50%;
-	-o-perspective: 1000px;
+	-o-perspective-origin: 50% 50%;
+	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	-o-perspective: 1000px;
 }
