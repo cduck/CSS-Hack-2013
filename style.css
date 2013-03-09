@@ -121,8 +121,8 @@ p {
 	background:rgba(127,255,255,0.75);
 }
 .boxb {
-	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
-	background:rgba(255,127,255,0.75);
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	background:rgba(127,127,255,0.75);
 }
 .boxc {
 	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
@@ -137,8 +137,8 @@ p {
 	background:rgba(255,127,127,0.75);
 }
 .boxf {
-	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
-	background:rgba(127,127,255,0.75);
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	background:rgba(255,127,255,0.75);
 }
 
 
@@ -153,7 +153,7 @@ p {
 	-webkit-transform: rotate3d(0,1,0,0deg);
 }
 #tabb:checked ~ * .boxcontainer {
-	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
+	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
 }
 #tabc:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg);
@@ -165,7 +165,7 @@ p {
 	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg);
 }
 #tabf:checked ~ * .boxcontainer {
-	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
+	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
 }
 
 
