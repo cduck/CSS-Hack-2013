@@ -145,7 +145,7 @@ p {
 
 /* Rotate the box when a tab is selected. */
 .boxcontainer {
-	-webkit-transform: rotate3d(0,1,0,0deg);
+	-webkit-transform: rotate3d(0,1,0,500deg);
 	
 	-webkit-transition: -webkit-transform 0.7s ease;
 }
@@ -167,6 +167,7 @@ p {
 #tabf:checked ~ * .boxcontainer {
 	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
 }
+
 
 
 
