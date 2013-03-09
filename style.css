@@ -1,0 +1,186 @@
+
+
+/* General Style */
+* {
+	font-family: Helvetica;
+}
+
+body {
+	text-align: center;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	padding: 0.5em;
+	padding-top: 0em;
+	width: 100%;
+}
+input[name="tabs"] {
+	display:none;
+}
+
+/* Tab Style */
+.tab {
+	display: inline-block;
+	padding: 0.4em 1.5em;
+	margin: 0;
+	border-width: 0 2px 1px 1px;
+	border-color: #777777;
+	border-style: solid;
+	background:#DDDDDD;
+	border-radius: 0 0 9px 9px;
+
+	font-color: black;
+}
+a:active .tab {
+	border-width: 0 1px 1px 1px;
+	margin-left: 1px;
+	background: #CCCCCC;
+	border-color: #555555;
+}
+
+/* Content Style */
+.boxside {
+	padding: 0em;
+}
+h2 {
+	font-size: 30pt;
+}
+p {
+	font-size: 16pt;
+}
+
+#sig {
+	position: fixed;
+	bottom: 0.5em;
+	right: 2em;
+	color: #999999;
+}
+#sig > img {
+	height:1.5em;
+	vertical-align:middle;
+	margin-left:1em;
+	opacity:0.65;
+}
+
+
+
+
+/* Styling of the cube */
+
+.content {
+	margin: 0;
+	padding: 0 1em;
+	height: 100%;
+
+	overflow: scroll;
+}
+
+.boxwrapper {
+	margin 5em 0;
+	padding: 0;
+	padding-top: 30px;
+	width: 100%;
+	
+	-webkit-perspective-origin: 50% 50%;
+	-webkit-perspective: 1000px;
+}
+.boxscaler {
+	-webkit-transform: translate3d(0,0,-335px);
+}
+
+.boxcontainer {
+	margin: auto;
+	padding: 0;
+	width: 670px;
+	height: 670px;
+	margin-bottom: 0;
+	position: relative;
+}
+.boxside {
+	position: absolute;
+	z-index: 100;
+	top:0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 3D transform of each cube side in relation to the container. */
+
+.box {
+	-webkit-transform-style: preserve-3d;
+}
+
+.boxa {
+	-webkit-transform: translate3d(0,0,335px);
+	background:rgba(127,255,255,0.75);
+}
+.boxb {
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	background:rgba(255,127,255,0.75);
+}
+.boxc {
+	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	background:rgba(255,255,127,0.75);
+}
+.boxd {
+	-webkit-transform: rotate3d(1,1,0,180deg) translate3d(0,0,335px);
+	background:rgba(127,255,127,0.75);
+}
+.boxe {
+	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) translate3d(0,0,335px);
+	background:rgba(255,127,127,0.75);
+}
+.boxf {
+	-webkit-transform: rotate3d(1,1,0,180deg) rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) translate3d(0,0,335px);
+	background:rgba(127,127,255,0.75);
+}
+
+
+
+/* Rotate the box when a tab is selected. */
+.boxcontainer {
+	-webkit-transform: rotate3d(0,1,0,0deg);
+	
+	-webkit-transition: -webkit-transform 0.7s ease;
+}
+#taba:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(0,1,0,0deg);
+}
+#tabb:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg) rotate3d(1,1,0,-180deg);
+}
+#tabc:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg);
+}
+#tabd:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(1,1,0,-180deg);
+}
+#tabe:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(0,1,0,-90deg) rotate3d(1,0,0,90deg);
+}
+#tabf:checked ~ * .boxcontainer {
+	-webkit-transform: rotate3d(1,0,0,-90deg) rotate3d(0,1,0,90deg) rotate3d(1,1,0,-180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
